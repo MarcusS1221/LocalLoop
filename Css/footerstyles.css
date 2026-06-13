@@ -1,0 +1,31 @@
+.site-footer {
+    background:#16a34a;
+    color: #a8c8a8;
+    padding: 40px 10%;
+    min-height: 40vh;
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+}
+
+.footer-logo {
+    height: 65px;
+    width: auto;
+    opacity: 0.85;
+}
+
+.footer-tagline {
+    font-size: 15px;
+    color: #0c1f0c;
+    font-style: italic;
+}
+
+.footer-copy {
+    font-size: 13px;
+    color: #040604;
+}

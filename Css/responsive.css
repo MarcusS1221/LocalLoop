@@ -1,0 +1,556 @@
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+@media (max-width: 1024px) {
+
+    header {
+        padding: 10px 30px;
+    }
+
+    .navbar a {
+        margin-left: 30px;
+        font-size: 20px;
+    }
+
+    .logoimg {
+        height: 80px;
+    }
+
+    .Categories {
+        gap: 40px;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .listings-layout {
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .filters-column {
+        width: 180px;
+    }
+
+    .hero {
+        padding: 60px 6%;
+        gap: 30px;
+    }
+
+    .hero-badge {
+        width: 240px;
+        height: 240px;
+    }
+
+    .hero-badge img {
+        width: 160px;
+    }
+
+    .split-section {
+        padding: 60px 6%;
+        gap: 40px;
+    }
+
+    .split-visual {
+        height: 260px;
+    }
+
+    .page-top {
+        padding: 20px 20px 0;
+    }
+
+    .users-section {
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 10px 20px;
+        height: auto !important;
+        min-height: 60px;
+        flex-wrap: wrap;
+        position: relative;
+        gap: 8px;
+    }
+
+    .logoimg {
+        height: 55px;
+        display: flex;
+    }
+
+    .navbar {
+        order: 3;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: #1a8f4a;
+        border-radius: 6px;
+        padding: 4px 0;
+    }
+
+    .navbar.open {
+        display: flex;
+    }
+
+    .navbar a {
+        margin: 0;
+        padding: 8px 14px;
+        font-size: 16px;
+        border-bottom: none;
+        border-right: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .navbar a:last-child {
+        border-right: none;
+    }
+
+    .Login-Container {
+        gap: 12px;
+    }
+
+    .Loginpfp {
+        height: 40px;
+    }
+
+    .header-login-btn {
+        font-size: 13px;
+        padding: 6px 14px;
+    }
+
+    .notif-btn {
+        font-size: 18px;
+    }
+
+    .Categories {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .Categories img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .Category p {
+        font-size: 13px;
+        margin-top: 6px;
+    }
+
+    .search-container {
+        padding: 20px 15px 0;
+    }
+
+    .search-container input {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .listings-layout {
+        flex-direction: column;
+        padding: 12px 12px;
+        gap: 12px;
+    }
+
+    .filters-column {
+        width: 100%;
+        position: static;
+    }
+
+    .listings-wrapper {
+        width: 100%;
+    }
+
+    .listings-box {
+        padding: 12px;
+    }
+
+    .listing-card {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .listing-thumb {
+        width: 100%;
+        height: 180px;
+        border-radius: 8px;
+    }
+
+    .listing-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .listing-mid {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .listing-actions {
+        flex-wrap: wrap;
+    }
+
+    .page-top {
+        padding: 15px 12px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .page-top h1 {
+        font-size: 22px;
+    }
+
+    .modal-box {
+        width: 95%;
+        padding: 20px;
+        max-height: 90vh;
+    }
+
+    .notif-page {
+        padding: 0 12px;
+        margin: 20px auto;
+    }
+
+    .user-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .user-card .btn-remove {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .users-section {
+        padding: 12px;
+    }
+
+    .account-box {
+        margin: 20px 12px;
+        width: auto;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 6%;
+        min-height: auto;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero-text {
+        order: 2;
+    }
+
+    .hero-badge {
+        order: 1;
+        width: 160px;
+        height: 160px;
+    }
+
+    .hero-badge img {
+        width: 110px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-desc {
+        font-size: 15px;
+        max-width: 100%;
+    }
+
+    .btn-hero {
+        width: 100%;
+        text-align: center;
+    }
+
+    .categories-grid {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .cat-card {
+        padding: 18px 20px;
+    }
+
+    .cat-card img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .split-section,
+    .split-section.reverse {
+        flex-direction: column;
+        padding: 40px 6%;
+        gap: 30px;
+    }
+
+    .split-visual {
+        width: 100%;
+        height: 200px;
+    }
+
+    .split-content h2 {
+        font-size: 26px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+
+    .btn-primary,
+    .btn-outline {
+        width: 100%;
+        text-align: center;
+    }
+
+    .login-register-container {
+        padding: 30px 15px;
+    }
+
+    .form-box {
+        padding: 20px;
+    }
+
+    .site-footer {
+        padding: 30px 6%;
+        min-height: auto;
+    }
+
+    .gallery-images img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .pagination {
+        gap: 12px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .hero {
+        min-height: auto !important;
+        width: 100% !important;
+        padding: 40px 6% !important;
+        flex-direction: column;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .hero-badge {
+        width: 140px;
+        height: 140px;
+    }
+
+    .hero-badge img {
+        width: 100px;
+    }
+
+    .hero-title {
+        font-size: 28px !important;
+    }
+
+    .listings-layout {
+        flex-direction: column !important;
+        padding: 10px !important;
+        gap: 10px !important;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .filters-column {
+        width: 100% !important;
+        position: static !important;
+        box-sizing: border-box;
+    }
+
+    .filters-column form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        align-items: end;
+    }
+
+    .filters-column h3 {
+        grid-column: 1 / -1;
+        margin: 0 0 4px;
+        font-size: 15px;
+    }
+
+    .filters-column label {
+        display: none;
+    }
+
+    .filters-column select,
+    .filters-column input[type="number"],
+    .filters-column input[type="text"] {
+        width: 100%;
+        padding: 7px 8px;
+        font-size: 13px;
+        box-sizing: border-box;
+        margin-top: 0;
+    }
+
+    .filters-column .btn-filter {
+        grid-column: 1 / -1;
+        width: 100%;
+        padding: 9px;
+        margin-top: 0;
+    }
+
+    .filters-column .btn-clear {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    .listings-wrapper {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .listing-card {
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px;
+        margin-bottom: 8px;
+    }
+
+    .listing-thumb {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .listing-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .listing-title { font-size: 15px; flex: 1; }
+    .listing-price { font-size: 15px; font-weight: bold; white-space: nowrap; }
+    .listing-mid   { font-size: 12px; flex-wrap: wrap; gap: 6px; }
+    .listing-desc  { font-size: 13px; }
+
+    .listing-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .listing-actions form { flex: 1; min-width: 100px; }
+
+    .btn-remove,
+    .btn-report,
+    .btn-interested,
+    .btn-interested-done {
+        width: 100%;
+        padding: 9px;
+        font-size: 13px;
+    }
+
+    .user-card {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        padding: 12px;
+    }
+
+    .user-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .user-email {
+        font-size: 12px;
+        word-break: break-all;
+    }
+
+    .user-card form { width: 100%; }
+
+    .user-card .btn-remove {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .users-section {
+        padding: 10px;
+    }
+
+    .users-section .listings-box {
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    header {
+        padding: 10px 15px !important;
+    }
+
+    .logoimg {
+        height: 45px !important;
+    }
+
+    .Loginpfp {
+        height: 35px !important;
+    }
+
+    .hero-badge {
+        display: none;
+    }
+
+    .hero {
+        padding: 30px 5% !important;
+    }
+
+    .hero-title {
+        font-size: 26px !important;
+    }
+
+    .hero-desc {
+        font-size: 14px !important;
+    }
+}

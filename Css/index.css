@@ -1,0 +1,111 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'DM Sans', Arial, sans-serif;
+    background: #f4fff8;
+    color: #1a2e1a;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1fa758;
+    padding: 10px 70px;
+    height: 12vh;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.4);
+}
+
+.header-login-btn {
+    background: white;
+    color: #1fa758;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.header-login-btn:hover {
+    background: #e8f5e9;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    min-height: 90vh;
+    background: linear-gradient(135deg, #e8f5e9 0%, #67c578 60%, #36773e 100%);
+    gap: 40px;
+}
+
+.hero-label {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #1fa758;
+    margin-bottom: 16px;
+}
+
+.hero-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.15;
+    color: #1a2e1a;
+    margin-bottom: 20px;
+}
+
+.hero-title em {
+    font-style: italic;
+    color: #1fa758;
+}
+
+.hero-desc {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #3d5a3d;
+    max-width: 480px;
+    margin-bottom: 32px;
+}
+
+.btn-hero {
+    display: inline-block;
+    background: #1fa758;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 4px 15px rgba(31,167,88,0.35);
+}
+
+.btn-hero:hover {
+    background: #178a48;
+    transform: translateY(-2px);
+}
+
+.hero-badge {
+    width: 320px;
+    height: 320px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 60px rgba(31,167,88,0.2);
+    flex-shrink: 0;
+}
+
+.hero-badge img {
+    width: 220px;
+    height: auto;
+}

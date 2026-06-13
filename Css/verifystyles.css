@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+body {
+    background: linear-gradient(135deg, #e8f5e9 0%, #67c578 60%, #36773e 100%);
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1fa758;
+    padding: 10px 70px;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.4);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    margin-left: 80px;
+    font-size: 28px;
+}
+
+.navbar a:hover {
+    
+    color: rgb(15, 64, 31);
+}
+
+.logoimg {
+    height: 105px;
+    width: auto;
+    cursor: pointer;
+}
+
+.Login-Container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Loginpfp {
+    height: 55px;
+    width: auto;
+    cursor: pointer;
+}
+
+.account-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin: 40px auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+small {
+    display: block;
+    color: gray;
+    margin-top: -12px;
+    margin-bottom: 12px;
+    font-size: 12px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+    background: #eee;
+}
+
+input:disabled {
+    background-color: #d6d6d6;
+    color: #888;
+    cursor: not-allowed;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-save {
+    background-color: #1fa758;
+    color: white;
+}
+
+.btn-verify {
+    background-color: #1fa758;
+    color: white;
+}
+
+.btn-logout {
+    background-color: #f44336;
+    color: white;
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
